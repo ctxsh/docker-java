@@ -23,7 +23,7 @@ jobs:
           context: .
           file: Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          build_args: |
+          build-args: |
             URL=https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09_openj9-0.20.0/OpenJDK8U-jdk_x64_linux_openj9_linuxXL_8u252b09_openj9-0.20.0.tar.gz
           tags: |
             ctxsh/java:jdk8
@@ -34,7 +34,7 @@ jobs:
           context: .
           file: Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          build_args: |
+          build-args: |
             URL=https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09_openj9-0.20.0/OpenJDK8U-jre_x64_linux_openj9_linuxXL_8u252b09_openj9-0.20.0.tar.gz
           tags:
             ctxsh/java:jre8
@@ -45,7 +45,7 @@ jobs:
           context: .
           file: Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          build_args: |
+          build-args: |
             URL=https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10_openj9-0.20.0/OpenJDK11U-jdk_x64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz
           tags: |
             ctxsh/java:jdk11
@@ -56,7 +56,7 @@ jobs:
           context: .
           file: Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          build_args: |
+          build-args: |
             URL=https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10_openj9-0.20.0/OpenJDK11U-jre_x64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz
           tags:
             ctxsh/java:jre11
@@ -67,7 +67,7 @@ jobs:
           context: .
           file: Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          build_args: |
+          build-args: |
             URL=https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7_openj9-0.20.0/OpenJDK14U-jdk_x64_linux_openj9_linuxXL_14.0.1_7_openj9-0.20.0.tar.gz
           tags: |
             ctxsh/java:jdk14
@@ -78,7 +78,7 @@ jobs:
           context: .
           file: Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          build_args: |
+          build-args: |
             URL=https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7_openj9-0.20.0/OpenJDK14U-jre_x64_linux_openj9_linuxXL_14.0.1_7_openj9-0.20.0.tar.gz
           tags:
             ctxsh/java:jre14
