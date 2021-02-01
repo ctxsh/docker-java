@@ -34,7 +34,7 @@ jre8:
 .PHONY: jdk11
 jdk11:
 	@docker build \
-		--build-arg "URL=https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10_openj9-0.20.0/OpenJDK11U-jdk_x64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz" \
+		--build-arg "URL=https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9_openj9-0.24.0/OpenJDK11U-jdk_x64_linux_openj9_linuxXL_11.0.10_9_openj9-0.24.0.tar.gz" \
 		--tag $(DOCKERHUB_USER)/java:jdk11 \
 		--file Dockerfile \
 		.
@@ -42,7 +42,7 @@ jdk11:
 .PHONY: jre11
 jre11:
 	@docker build \
-		--build-arg "URL=https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10_openj9-0.20.0/OpenJDK11U-jre_x64_linux_openj9_linuxXL_11.0.7_10_openj9-0.20.0.tar.gz" \
+		--build-arg "URL=https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9_openj9-0.24.0/OpenJDK11U-jre_x64_linux_openj9_linuxXL_11.0.10_9_openj9-0.24.0.tar.gz" \
 		--tag $(DOCKERHUB_USER)/java:jre11 \
 		--file Dockerfile \
 		.
@@ -50,7 +50,7 @@ jre11:
 .PHONY: jdk14
 jdk14:
 	@docker build \
-		--build-arg "URL=https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7_openj9-0.20.0/OpenJDK14U-jdk_x64_linux_openj9_linuxXL_14.0.1_7_openj9-0.20.0.tar.gz" \
+		--build-arg "URL=https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_linuxXL_14.0.2_12_openj9-0.21.0.tar.gz" \
 		--tag $(DOCKERHUB_USER)/java:jdk14 \
 		--file Dockerfile \
 		.
@@ -58,7 +58,7 @@ jdk14:
 .PHONY: jre14
 jre14:
 	@docker build \
-		--build-arg "URL=https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7_openj9-0.20.0/OpenJDK14U-jre_x64_linux_openj9_linuxXL_14.0.1_7_openj9-0.20.0.tar.gz" \
+		--build-arg "URL=https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_x64_linux_openj9_linuxXL_14.0.2_12_openj9-0.21.0.tar.gz" \
 		--tag $(DOCKERHUB_USER)/java:jre14 \
 		--file Dockerfile \
 		.
